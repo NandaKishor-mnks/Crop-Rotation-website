@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Crop Rotation CSP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        /* ================= ABOUT PAGE ================= */
+
+        .about-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .about-heading h2 {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+
+        .about-heading p {
+            color: #666;
+            font-size: 1.05rem;
+        }
+
+
+        /* ================= SECTIONS ================= */
+
+        .about-section {
+            margin-bottom: 35px;
+        }
+
+        .about-section .card {
+            padding: 30px;
+        }
+
+        .about-section h3 {
+            color: var(--primary-dark);
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+        }
+
+
+        /* ================= DESCRIPTION POINTS ================= */
+
+        .description-points {
+            margin: 0;
+            padding-left: 28px;
+        }
+
+        .description-points li {
+            margin-bottom: 12px;
+            padding-left: 5px;
+            color: #333;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .description-points strong {
+            font-weight: 700;
+            color: #111;
+        }
+
+
+        /* ================= TEAM ================= */
+
+        .team-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .team-box {
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .team-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.15rem;
+        }
+
+        .team-box p {
+            margin: 8px 0;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .team-box ul {
+            padding-left: 22px;
+            line-height: 1.9;
+        }
+
+        .team-box li {
+            color: #333;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            .team-details {
+                grid-template-columns: 1fr;
+            }
+
+            .about-section .card {
+                padding: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="header-container">
+
+        <div class="logo-area">
+
+            <img src="images/college-logo.png"
+                alt="GIST Logo"
+                class="college-logo">
+
+            <div class="college-info">
+
+                <h1>
+                    Geethanjali Institute of Science & Technology
+                </h1>
+
+                <h2>
+                    Department of Artificial Intelligence and Data Science
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <button class="menu-toggle" id="menuToggle">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="active">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="weekly-details.html">
+                        Weekly Details
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="main-content section-padding">
+
+    <div class="container">
+
+
+        <!-- PAGE HEADING -->
+
+        <div class="about-heading">
+
+            <h2>
+                About Our Project
+            </h2>
+
+            <p>
+                Awareness on Crop Rotation Practice Among Farmers
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= OUR MISSION ================= -->
+
+        <section class="about-section">
+
+            <div class="card">
+
+                <h3>
+                    Our Mission
+                </h3>
+
+                <ul class="description-points">
+
+                    <li>
+                        <strong>Sustainable Agriculture:</strong>
+                        Promote sustainable farming practices that help
+                        protect soil and agricultural resources.
+                    </li>
+
+                    <li>
+                        <strong>Farmer Awareness:</strong>
+                        Create awareness among farmers about the importance
+                        and benefits of crop rotation.
+                    </li>
+
+                    <li>
+                        <strong>Soil Protection:</strong>
+                        Help farmers understand the importance of maintaining
+                        soil fertility and healthy soil.
+                    </li>
+
+                    <li>
+                        <strong>Knowledge Sharing:</strong>
+                        Share useful and practical information through farmer
+                        interactions, field visits, and awareness activities.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= IMPORTANCE ================= -->
+
+        <section class="about-section">
+
+            <div class="card">
+
+                <h3>
+                    The Importance of Crop Rotation
+                </h3>
+
+                <ul class="description-points">
+
+                    <li>
+                        <strong>Soil Health:</strong>
+                        Different crops use different nutrients and have
+                        different root systems, helping maintain soil
+                        fertility and structure.
+                    </li>
+
+                    <li>
+                        <strong>Pest and Disease Control:</strong>
+                        Changing crops can disturb pest life cycles and
+                        help reduce crop disease problems.
+                    </li>
+
+                    <li>
+                        <strong>Better Crop Growth:</strong>
+                        Healthy and nutrient-rich soil provides better
+                        conditions for crops to grow and produce good yields.
+                    </li>
+
+                    <li>
+                        <strong>Nutrient Balance:</strong>
+                        Growing different crops helps reduce the continuous
+                        use of the same nutrients from the soil.
+                    </li>
+
+                    <li>
+                        <strong>Reduced Fertilizer Dependence:</strong>
+                        Some crops, especially legumes, can improve the
+                        availability of important nutrients such as nitrogen.
+                    </li>
+
+                    <li>
+                        <strong>Soil Protection:</strong>
+                        Different root systems help hold the soil together
+                        and can reduce soil erosion.
+                    </li>
+
+                    <li>
+                        <strong>Sustainable Farming:</strong>
+                        Crop rotation helps maintain productive farmland
+                        for future seasons.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT OUR RESEARCH ================= -->
+
+        <section class="about-section">
+
+            <div class="card">
+
+                <h3>
+                    About Our Research
+                </h3>
+
+                <ul class="description-points">
+
+                    <li>
+                        <strong>Farmer Survey:</strong>
+                        Collected information from farmers to understand
+                        their awareness and practices related to crop rotation.
+                    </li>
+
+                    <li>
+                        <strong>Questionnaires:</strong>
+                        Used simple questions to collect information about
+                        farming methods, crop choices, and soil management.
+                    </li>
+
+                    <li>
+                        <strong>Field Observation:</strong>
+                        Visited agricultural fields to observe different
+                        crops and farming practices.
+                    </li>
+
+                    <li>
+                        <strong>Farmer Interaction:</strong>
+                        Interacted directly with farmers to understand
+                        their experiences and challenges.
+                    </li>
+
+                    <li>
+                        <strong>Data Collection:</strong>
+                        Collected and organized information obtained from
+                        surveys, field visits, and farmer interactions.
+                    </li>
+
+                    <li>
+                        <strong>Awareness Activity:</strong>
+                        Shared information with farmers about crop rotation,
+                        soil fertility, and sustainable farming practices.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= OUR TEAM ================= -->
+
+        <section class="about-section">
+
+            <div class="card">
+
+                <h3>
+                    Our Team Details
+                </h3>
+
+
+                <div class="team-details">
+
+
+                    <!-- TEAM MEMBERS -->
+
+                    <div class="team-box">
+
+                        <h4>
+                              Team Members
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                <strong>
+                                    M. Nanda Kishor Singh
+                                </strong>
+                                – 242UA30069
+                            </li>
+
+                            <li>
+                                <strong>
+                                    V. Dharun
+                                </strong>
+                                – 242UA30127
+                            </li>
+
+                            <li>
+                                <strong>
+                                    M. Gunasekhar
+                                </strong>
+                                – 242UA30067
+                            </li>
+
+                            <li>
+                                <strong>
+                                    P. Rohith
+                                </strong>
+                                – 242UA30084
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- FACULTY GUIDE -->
+
+                    <div class="team-box">
+
+                        <h4>
+                              Faculty Guide
+                        </h4>
+
+                        <p>
+                            <strong>
+                                Mr. K. Venkateswarlu, M.Tech.
+                            </strong>
+                        </p>
+
+                        <p>
+                            Assistant Professor
+                        </p>
+
+                        <p>
+                            Department of Artificial Intelligence
+                            and Data Science
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROJECT LOCATION -->
+
+                <div class="team-box"
+                    style="
+                        margin-top:25px;
+                        text-align:center;
+                    ">
+
+                    <h4>
+                        📍 Project Location
+                    </h4>
+
+                    <p>
+                        <strong>
+                            Gangavaram Village, Kovur Mandal,
+                            SPSR Nellore District, Andhra Pradesh
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COMMUNITY IMPACT ================= -->
+
+        <section class="about-section">
+
+            <div class="card">
+
+                <h3>
+                    Community Impact
+                </h3>
+
+                <ul class="description-points">
+
+                    <li>
+                        <strong>Farmer Interaction:</strong>
+                        Interacted with local farmers to understand
+                        their farming practices and experiences.
+                    </li>
+
+                    <li>
+                        <strong>Creating Awareness:</strong>
+                        Shared information about the importance and
+                        benefits of crop rotation.
+                    </li>
+
+                    <li>
+                        <strong>Soil Health Awareness:</strong>
+                        Explained the importance of maintaining soil
+                        fertility for better crop production.
+                    </li>
+
+                    <li>
+                        <strong>Sustainable Farming:</strong>
+                        Encouraged awareness about farming practices
+                        that help maintain healthy agricultural land.
+                    </li>
+
+                    <li>
+                        <strong>Community Learning:</strong>
+                        The project helped students and farmers exchange
+                        knowledge and understand local farming challenges.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 Geethanjali Institute of Science & Technology |
+        Dept. of AI & DS
+    </p>
+
+</footer>
+
+
+
+<!-- ================= MENU SCRIPT ================= -->
+
+<script>
+
+    document
+        .getElementById('menuToggle')
+        .addEventListener('click', function () {
+
+            document
+                .getElementById('navMenu')
+                .classList
+                .toggle('active');
+
+        });
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Details - Crop Rotation CSP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Embedded CSS to ensure tabs hide and show properly */
+        .week-content {
+            display: none !important;
+        }
+        .week-content.active {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+   <header class="header">
+    <div class="header-container">
+        <div class="logo-area">
+            <!-- College Logo Image -->
+            <img src="images/college-logo.png" 
+                 alt="GIST Logo" 
+                 class="college-logo" 
+                 onerror="this.src='https://via.placeholder.com/50?text=LOGO'">
+            
+            <div class="college-info">
+                <h1>Geethanjali Institute of Science & Technology</h1>
+                <h2>Department of Artificial Intelligence and Data Science</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="weekly-details.html" class="active">Weekly Details</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main class="main-content section-padding">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 20px; color: var(--primary-dark);">Our 8-Week Journey</h2>
+
+            <!-- Week Buttons (Tabs) -->
+            <div class="week-tabs">
+                <button class="tab-btn active" id="btn-1" onclick="switchWeek(1)">Week 1</button>
+                <button class="tab-btn" id="btn-2" onclick="switchWeek(2)">Week 2</button>
+                <button class="tab-btn" id="btn-3" onclick="switchWeek(3)">Week 3</button>
+                <button class="tab-btn" id="btn-4" onclick="switchWeek(4)">Week 4</button>
+                <button class="tab-btn" id="btn-5" onclick="switchWeek(5)">Week 5</button>
+                <button class="tab-btn" id="btn-6" onclick="switchWeek(6)">Week 6</button>
+                <button class="tab-btn" id="btn-7" onclick="switchWeek(7)">Week 7</button>
+                <button class="tab-btn" id="btn-8" onclick="switchWeek(8)">Week 8</button>
+            </div>
+
+           <!-- WEEK 1 CONTENT -->
+<div class="week-content active" id="week-1">
+
+    <h2>Week 1: Introduction & Initial Field Visit</h2>
+
+    <h3>Week 1 Overview:</h3>
+    <ul>
+        <li>Focused on understanding Gangavaram Village and its agricultural environment.</li>
+        <li>Visited the village and explored the surrounding agricultural fields.</li>
+        <li>Interacted with local farmers and village elders.</li>
+        <li>Gathered initial information about farming practices and crop cultivation.</li>
+        <li>Observed soil conditions and agricultural field conditions.</li>
+        <li>Collected information about water availability and irrigation practices.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Explored the Village:</strong>
+            Understood the local environment, lifestyle, and agricultural activities.
+        </li>
+
+        <li>
+            <strong>Visited Agricultural Fields:</strong>
+            Observed the crops being cultivated and the general condition of the fields.
+        </li>
+
+        <li>
+            <strong>Interacted with Farmers:</strong>
+            Discussed farming practices and cultivation patterns with local farmers and elders.
+        </li>
+
+        <li>
+            <strong>Studied Farming Practices:</strong>
+            Gathered information about crops, traditional cultivation methods, and long-term farming practices.
+        </li>
+
+        <li>
+            <strong>Observed Water & Irrigation Sources:</strong>
+            Identified the main sources of water used for agricultural activities.
+        </li>
+
+        <li>
+            <strong>Observed Soil & Field Conditions:</strong>
+            Examined the soil surface, field conditions, and visible signs related to soil health.
+        </li>
+    </ul>
+
+    <h3>Our Initial Understanding:</h3>
+    <ul>
+        <li>Understood the importance of directly interacting with farmers.</li>
+        <li>Gained an initial understanding of local agricultural practices.</li>
+        <li>Identified the importance of observing real field conditions.</li>
+        <li>Understood some of the factors affecting crop cultivation and soil health.</li>
+        <li>Collected preliminary information for the upcoming research and survey.</li>
+    </ul>
+
+    <h3>Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week1-village.jpg"
+                 alt="Gangavaram Village Project Location"
+                 onerror="this.style.display='none'">
+            <p>Gangavaram Village — Our CSP Project Location</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week1-field.jpg"
+                 alt="Agricultural Field Observation"
+                 onerror="this.style.display='none'">
+            <p>Observation of Crops and Agricultural Field Conditions</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week1-farmer.jpg"
+                 alt="Interaction with Local Farmer"
+                 onerror="this.style.display='none'">
+            <p>Interaction with a Local Farmer</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week1-team.jpg"
+                 alt="CSP Team During Village Visit"
+                 onerror="this.style.display='none'">
+            <p>Our Team During the Initial Village Visit</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 2 CONTENT -->
+           <!-- WEEK 2 CONTENT -->
+<div class="week-content" id="week-2">
+
+    <h2>Week 2: Survey & Data Collection</h2>
+
+    <h3>Week 2 Overview:</h3>
+    <ul>
+        <li>Focused on collecting detailed information about farming practices and agricultural expenses.</li>
+        <li>Conducted surveys with farming households to understand fertilizer usage and seasonal expenses.</li>
+        <li>Studied crop diseases, insect pests, and their occurrence during cultivation.</li>
+        <li>Interacted with farmers and agricultural workers to understand their experiences.</li>
+        <li>Collected information about off-season agricultural activities and employment.</li>
+        <li>Gathered responses through questionnaires for further analysis.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Conducted Household Surveys:</strong>
+            Collected information about chemical fertilizer usage and expenditure during different farming seasons.
+        </li>
+
+        <li>
+            <strong>Studied Crop Diseases & Pests:</strong>
+            Interacted with farmers to identify common crop diseases and seasonal insect pest problems.
+        </li>
+
+        <li>
+            <strong>Observed Agricultural Activities:</strong>
+            Visited agricultural fields to understand different cultivation activities and farming conditions.
+        </li>
+
+        <li>
+            <strong>Interacted with Agricultural Workers:</strong>
+            Discussed off-season employment opportunities and wage-related activities with landless agricultural workers.
+        </li>
+
+        <li>
+            <strong>Collected Questionnaire Responses:</strong>
+            Organized and compiled responses from 25 questionnaire sheets for further analysis.
+        </li>
+    </ul>
+
+    <h3>Our Initial Understanding:</h3>
+    <ul>
+        <li>Understood the financial dependence of farmers on chemical fertilizers.</li>
+        <li>Identified common crop diseases and seasonal pest problems.</li>
+        <li>Gained information about agricultural employment during the off-season.</li>
+        <li>Understood the importance of collecting information directly from farmers.</li>
+        <li>Learned how questionnaires can be used to collect and organize field data.</li>
+        <li>Collected preliminary data that will support our further research and analysis.</li>
+    </ul>
+
+    <h3>Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week2-photo1.jpg"
+                 alt="Farmers Working in Agricultural Field">
+            <p>Observation of Farmers During Agricultural Activities</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week2-photo2.jpg"
+                 alt="Interaction with Farmers">
+            <p>Interaction with Farmers During the Field Survey</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week2-photo3.jpg"
+                 alt="Agricultural Field Observation">
+            <p>Observation of Crop Cultivation and Field Conditions</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week2-photo4.jpg"
+                 alt="Paddy Field Observation">
+            <p>Observation of Paddy Cultivation Practices</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 3 CONTENT -->
+           <!-- WEEK 3 CONTENT -->
+<div class="week-content" id="week-3">
+
+    <h2>Week 3: Observation & Crop Study</h2>
+
+    <h3>Week 3 Overview:</h3>
+    <ul>
+        <li>Focused on detailed observation of soil conditions and agricultural fields.</li>
+        <li>Studied topsoil texture, surface cracking, moisture retention, and soil structure.</li>
+        <li>Observed different crop plots to understand plant development and crop health.</li>
+        <li>Examined the effects of continuous cultivation on soil and crops.</li>
+        <li>Observed the condition of bare and unplanted fields during the summer period.</li>
+        <li>Recorded field observations for identifying major agricultural problems.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Observed Soil Conditions:</strong>
+            Inspected topsoil texture, surface cracking, hardness, and moisture retention in agricultural fields.
+        </li>
+
+        <li>
+            <strong>Studied Soil Structure:</strong>
+            Observed soil compaction and changes in soil structure caused by continuous cultivation and field conditions.
+        </li>
+
+        <li>
+            <strong>Studied Crop Plots:</strong>
+            Examined Chilli, Okra, and Taro root cultivation plots to observe plant development and crop health.
+        </li>
+
+        <li>
+            <strong>Observed Root Health:</strong>
+            Examined crop roots and identified visible signs of root-related problems such as root rot.
+        </li>
+
+        <li>
+            <strong>Observed Wind Erosion:</strong>
+            Studied the effects of wind erosion on bare and unplanted summer fields where the topsoil was exposed.
+        </li>
+
+        <li>
+            <strong>Observed Water Management:</strong>
+            Examined field drainage systems and traditional water management methods used during dry periods.
+        </li>
+
+        <li>
+            <strong>Recorded Field Observations:</strong>
+            Organized the observations collected from different agricultural fields to identify areas requiring further attention.
+        </li>
+    </ul>
+
+    <h3>Our Initial Understanding:</h3>
+    <ul>
+        <li>Understood the importance of healthy topsoil for crop growth.</li>
+        <li>Identified visible signs of soil compaction and structural degradation.</li>
+        <li>Gained knowledge about crop development and root health.</li>
+        <li>Observed the effects of leaving topsoil exposed in bare fields.</li>
+        <li>Understood the importance of proper drainage and water management.</li>
+        <li>Collected detailed field observations to support our further research.</li>
+    </ul>
+
+    <h3>Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week3-photo1.jpg"
+                 alt="Agricultural Field and Soil Observation">
+            <p>Observation of Soil Structure and Agricultural Field</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week3-photo2.jpg"
+                 alt="Interaction During Field Study">
+            <p>Interaction and Field Study with Local Farmers</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week3-photo3.jpg"
+                 alt="Crop Field Observation">
+            <p>Observation of Crop Growth and Field Conditions</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week3-photo4.jpg"
+                 alt="Agricultural Field Visit">
+            <p>Observation of Agricultural Activities in the Village</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 4 CONTENT -->
+           <!-- WEEK 4 CONTENT -->
+<div class="week-content" id="week-4">
+
+    <h2>Week 4: Survey Analysis & Findings</h2>
+
+    <h3>Week 4 Overview:</h3>
+    <ul>
+        <li>Focused on analyzing the information collected during the field survey.</li>
+        <li>Organized the raw questionnaire responses into structured categories.</li>
+        <li>Calculated percentages related to crop rotation awareness and farming practices.</li>
+        <li>Compared agricultural input expenses between continuous cultivation and rotated fields.</li>
+        <li>Studied farmers' observations about changes in crop yield and soil fertility.</li>
+        <li>Prepared graphical summaries to present the survey findings clearly.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Organized Survey Data:</strong>
+            Sorted the collected questionnaire responses and grouped the information into different categories for analysis.
+        </li>
+
+        <li>
+            <strong>Analyzed Crop Rotation Awareness:</strong>
+            Calculated percentage values to understand farmers' awareness and practice of crop rotation.
+        </li>
+
+        <li>
+            <strong>Compared Farming Expenses:</strong>
+            Compared input expenses between continuously cultivated fields and fields where different crops were rotated.
+        </li>
+
+        <li>
+            <strong>Prepared Graphical Summaries:</strong>
+            Created pie charts and bar graphs to represent the survey results in a simple and understandable way.
+        </li>
+
+        <li>
+            <strong>Studied Yield Changes:</strong>
+            Analyzed farmers' responses regarding changes in crop yield under continuous cultivation.
+        </li>
+
+        <li>
+            <strong>Identified Major Findings:</strong>
+            Identified important observations related to soil fertility, crop rotation practices, farming expenses, and farmers' concerns.
+        </li>
+    </ul>
+
+    <h3>Our Key Findings:</h3>
+    <ul>
+        <li>Survey responses showed differences in farmers' awareness and adoption of crop rotation.</li>
+        <li>Some farmers observed a decline in crop yield under continuous cultivation.</li>
+        <li>Farmers reported concerns related to increasing agricultural input costs.</li>
+        <li>Continuous cultivation can create challenges related to soil fertility and crop productivity.</li>
+        <li>The survey data provided useful information for planning the farmer awareness activities.</li>
+        <li>The collected data was converted into charts and graphical summaries for easy understanding.</li>
+    </ul>
+    <h3>Survey Findings:</h3>
+
+<ul>
+    <li>Most of the surveyed farmers had some awareness of crop rotation.</li>
+    <li>Only a part of the surveyed farmers were regularly following crop rotation practices.</li>
+    <li>Several farmers reported a decrease in soil fertility due to repeated cultivation.</li>
+    <li>The survey showed a need for greater awareness about the benefits of crop rotation.</li>
+    <li>The responses helped us understand the existing farming practices and soil-related concerns.</li>
+    <li>The collected information was used to plan suitable awareness activities for the farming community.</li>
+</ul>
+
+
+<h3>Questionnaire Used for Farmers:</h3>
+
+<ol>
+    <li>What crops do you grow regularly on your land?</li>
+    <li>Do you cultivate the same crop every season?</li>
+    <li>Are you aware of crop rotation practices?</li>
+    <li>Do you follow crop rotation on your farm?</li>
+    <li>Have you observed a decrease in soil fertility due to continuous cultivation of the same crop?</li>
+    <li>How often do you use fertilizers on your crops?</li>
+</ol>
+ <!-- SURVEY DETAILS -->
+<h3>Survey Summary:</h3>
+
+<ul>
+    <li><strong>Total Farmers Interacted:</strong> 25</li>
+    <li><strong>Farmers Aware of Crop Rotation:</strong> 18</li>
+    <li><strong>Farmers Not Aware of Crop Rotation:</strong> 7</li>
+    <li><strong>Farmers Following Crop Rotation:</strong> 11</li>
+    <li><strong>Farmers Not Following Crop Rotation:</strong> 14</li>
+    <li><strong>Farmers Who Observed Soil Fertility Decrease:</strong> 15</li>
+    <li><strong>Farmers Who Observed No Major Soil Issues:</strong> 10</li>
+</ul>
+
+
+<h2>SURVEY RESULTS</h2>
+
+<div class="survey-charts">
+
+    <div class="survey-chart">
+        <img src="images/survey/awareness.png"
+             alt="Awareness of Crop Rotation">
+    </div>
+
+    <div class="survey-chart">
+        <img src="images/survey/practices.png"
+             alt="Crop Rotation Practices">
+    </div>
+
+    <div class="survey-chart">
+        <img src="images/survey/soil-fertility.png"
+             alt="Soil Fertility Decrease"></div>
+
+</div>
+
+    
+
+    <h3>Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week4-photo1.jpg"
+                 alt="Farmer Field Observation">
+            <p>Observation of Agricultural Field Conditions</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week4-photo2.jpg"
+                 alt="Team Interaction During Field Visit">
+            <p>Interaction and Survey Activities with Farmers</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week4-photo3.jpg"
+                 alt="Team with Local Farmer">
+            <p>Interaction with a Local Farmer</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week4-photo4.jpg"
+                 alt="Crop Field Observation">
+            <p>Observation of Crop Growth and Field Conditions</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 5 CONTENT -->
+           <!-- WEEK 5 CONTENT -->
+<div class="week-content" id="week-5">
+
+    <h2>Week 5: Farmer Awareness Program</h2>
+
+    <h3>Week 5 Overview:</h3>
+    <ul>
+        <li>Focused on creating awareness among local farmers about the importance of crop rotation.</li>
+        <li>Conducted an educational awareness session on sustainable soil management.</li>
+        <li>Explained the benefits of alternating different crop families.</li>
+        <li>Demonstrated the role of leguminous crops in improving soil fertility.</li>
+        <li>Discussed natural nitrogen fixation and its importance for crop growth.</li>
+        <li>Explained how crop rotation can help reduce crop-specific pest problems.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Conducted Farmer Awareness Session:</strong>
+            Organized an educational session to explain the importance and benefits of crop rotation to local farmers.
+        </li>
+
+        <li>
+            <strong>Explained Soil Fertility:</strong>
+            Discussed how rotating different crops can help maintain soil nutrients and support long-term soil health.
+        </li>
+
+        <li>
+            <strong>Demonstrated Leguminous Crops:</strong>
+            Displayed Black Gram and Green Gram root samples and explained the presence and role of root nodules.
+        </li>
+
+        <li>
+            <strong>Explained Natural Nitrogen Fixation:</strong>
+            Explained how leguminous crops contribute to soil nitrogen availability through biological nitrogen fixation.
+        </li>
+
+        <li>
+            <strong>Discussed Pest Management:</strong>
+            Explained how alternating crop families can interrupt crop-specific pest cycles and reduce recurring pest problems.
+        </li>
+
+        <li>
+            <strong>Discussed Water & Soil Conservation:</strong>
+            Shared information about suitable irrigation, drainage, and soil conservation practices with farmers.
+        </li>
+    </ul>
+
+    <h3>Our Learning Outcome:</h3>
+    <ul>
+        <li>Improved our ability to communicate agricultural concepts with local farmers.</li>
+        <li>Understood the importance of using practical examples during awareness programs.</li>
+        <li>Learned how leguminous crops contribute to soil fertility.</li>
+        <li>Understood the role of biological nitrogen fixation in sustainable farming.</li>
+        <li>Gained knowledge about the relationship between crop rotation and pest management.</li>
+        <li>Developed better awareness about sustainable soil and crop management practices.</li>
+    </ul>
+   
+    <h3>Awareness Program Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week5-photo1.jpg"
+                 alt="Farmer Awareness Program">
+            <p>Farmer Awareness and Field Interaction</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week5-photo2.jpg"
+                 alt="Interaction with Farmers">
+            <p>Interaction with Farmers During the Awareness Program</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week5-photo3.jpg"
+                 alt="Field Visit with Farmer">
+            <p>Discussion with Farmers About Crop Cultivation</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week5-photo4.jpg"
+                 alt="Crop Field Observation">
+            <p>Observation of Crops and Agricultural Field</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 6 CONTENT -->
+          <!-- WEEK 6 CONTENT -->
+<div class="week-content" id="week-6">
+
+    <h2>Week 6: Outcomes & Future Suggestions</h2>
+
+    <h3>Project Outcomes:</h3>
+    <ul>
+        <li>The project helped us understand the existing farming practices in the village.</li>
+        <li>Awareness was created among farmers about the importance of crop rotation.</li>
+        <li>We gained knowledge about soil fertility issues caused by repeated cultivation of the same crops.</li>
+        <li>The study helped us understand the importance of sustainable farming practices.</li>
+        <li>Farmers were introduced to practical methods of soil testing and soil management.</li>
+        <li>We gained knowledge about green manuring and its role in improving soil health.</li>
+    </ul>
+
+    <h3>Future Suggestions:</h3>
+    <ul>
+        <li>Farmers should be encouraged to follow crop rotation regularly.</li>
+        <li>More awareness programs should be conducted to explain modern and sustainable farming practices.</li>
+        <li>Organic manures and balanced fertilizers should be used to maintain soil health.</li>
+        <li>Regular soil testing should be promoted to understand soil nutrient requirements.</li>
+        <li>Farmers should be encouraged to select suitable crops according to soil and seasonal conditions.</li>
+        <li>Sustainable soil and water management practices should be promoted among farmers.</li>
+    </ul>
+
+    <h3>Our Learning Outcome:</h3>
+    <ul>
+        <li>Understood the importance of crop rotation for sustainable agriculture.</li>
+        <li>Gained practical knowledge about soil health and soil testing.</li>
+        <li>Learned about the benefits of green manuring and organic matter.</li>
+        <li>Improved our understanding of farmers' challenges and agricultural practices.</li>
+        <li>Developed better communication skills through interaction with farmers.</li>
+        <li>Understood the importance of creating continuous awareness about sustainable farming.</li>
+    </ul>
+
+    <h3>Week 6 Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week6-photo1.jpg"
+                 alt="Agricultural Field Visit">
+            <p>Field Visit and Observation of Agricultural Activities</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week6-photo2.jpg"
+                 alt="Crop Field Observation">
+            <p>Observation of Crop Growth and Field Conditions</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week6-photo3.jpg"
+                 alt="Farmer Agricultural Activity">
+            <p>Interaction and Observation During Field Activities</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week6-photo4.jpg"
+                 alt="Agricultural Landscape">
+            <p>Observation of Agricultural Fields in Gangavaram</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 7 CONTENT -->
+<div class="week-content" id="week-7">
+
+    <h2>Week 7: Farmer Support & Feedback</h2>
+
+    <h3>Week 7 Overview:</h3>
+    <ul>
+        <li>Focused on providing useful resources and support to local farming households.</li>
+        <li>Distributed reference materials about crop rotation and sustainable farming practices.</li>
+        <li>Shared information about government agricultural support services and subsidized seed programs.</li>
+        <li>Conducted final household visits to collect feedback from participating farmers.</li>
+        <li>Reviewed the overall response and impact of the project activities.</li>
+        <li>Organized field records, survey sheets, and project documentation.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Distributed Reference Materials:</strong>
+            Provided printed crop rotation reference booklets and simple guides to farming households.
+        </li>
+
+        <li>
+            <strong>Provided Government Support Information:</strong>
+            Shared information about local government agricultural centers and subsidized pulse seed programs.
+        </li>
+
+        <li>
+            <strong>Conducted Final Household Visits:</strong>
+            Visited participating households to collect feedback about the project activities.
+        </li>
+
+        <li>
+            <strong>Collected Farmer Feedback:</strong>
+            Recorded responses from farmers to understand their experience and response to the project.
+        </li>
+
+        <li>
+            <strong>Reviewed Project Impact:</strong>
+            Evaluated the overall response of the farming community to the awareness activities.
+        </li>
+
+        <li>
+            <strong>Completed Project Documentation:</strong>
+            Organized field records, survey sheets, weekly reports, and other project documents.
+        </li>
+
+        <li>
+            <strong>Thanked the Community:</strong>
+            Expressed gratitude to the farmers, village elders, and community members for their support.
+        </li>
+    </ul>
+
+    <h3>Our Learning Outcome:</h3>
+    <ul>
+        <li>Learned the importance of providing farmers with useful agricultural information.</li>
+        <li>Understood how government agricultural support programs can benefit farming communities.</li>
+        <li>Gained experience in collecting and understanding feedback from farmers.</li>
+        <li>Understood the importance of evaluating the impact of a community service project.</li>
+        <li>Improved our skills in organizing field records and project documentation.</li>
+        <li>Developed better communication and interaction skills through engagement with farmers.</li>
+    </ul>
+
+    <h3>Field Visit Gallery:</h3>
+
+    <div class="week-gallery">
+
+        <div class="gallery-item">
+            <img src="images/week7/photo1.jpg"
+                 alt="Week 7 Farmer Support Activity">
+            <p>Farmer Support and Community Interaction</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week7/photo2.jpg"
+                 alt="Week 7 Farmer Feedback">
+            <p>Collection of Farmer Feedback</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week7/photo3.jpg"
+                 alt="Week 7 Community Visit">
+            <p>Final Household and Community Visit</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/week7/photo4.jpg"
+                 alt="Week 7 Project Activity">
+            <p>Community Interaction During the Final Stage</p>
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- WEEK 8 CONTENT -->
+           <!-- WEEK 8 CONTENT -->
+<div class="week-content" id="week-8">
+
+    <h2>Week 8: Documentation & Project Closure</h2>
+
+    <h3>Week 8 Overview:</h3>
+    <ul>
+        <li>Focused on completing the final stage of the Community Service Project.</li>
+        <li>Reviewed and organized all the activities and information collected during the project.</li>
+        <li>Prepared the final presentation and project documentation.</li>
+        <li>Presented the project activities and outcomes to faculty and students.</li>
+        <li>Collected feedback and suggestions from the evaluators.</li>
+        <li>Completed the final project report and reflected on the overall project journey.</li>
+    </ul>
+
+    <h3>What We Did:</h3>
+    <ul>
+        <li>
+            <strong>Final Presentation Preparation:</strong>
+            Organized the final presentation and reviewed all the project content for clear and effective delivery.
+        </li>
+
+        <li>
+            <strong>Project Presentation:</strong>
+            Presented our Community Service Project to faculty members and students and explained the work carried out in the village.
+        </li>
+
+        <li>
+            <strong>Project Exhibition:</strong>
+            Presented project information through posters and explained our activities and findings to visitors.
+        </li>
+
+        <li>
+            <strong>Received Feedback:</strong>
+            Collected comments and suggestions from evaluators to understand the strengths of our project and areas for improvement.
+        </li>
+
+        <li>
+            <strong>Final Documentation:</strong>
+            Prepared and submitted the final project report with the activities, findings, outcomes, and suggestions included.
+        </li>
+
+        <li>
+            <strong>Project Reflection:</strong>
+            Reflected on our overall experience, teamwork, learning, farmer interaction, and contribution to the community.
+        </li>
+    </ul>
+
+    <h3>Our Learning Outcome:</h3>
+    <ul>
+        <li>Improved our presentation and public speaking skills.</li>
+        <li>Learned how to organize and present project information effectively.</li>
+        <li>Gained experience in preparing formal project documentation.</li>
+        <li>Understood the importance of teamwork and communication throughout a community project.</li>
+        <li>Learned how to receive and use feedback for improving our work.</li>
+        <li>Reflected on the knowledge and experience gained throughout the Community Service Project.</li>
+        <li>Successfully completed the project documentation and project closure activities.</li>
+    </ul>
+
+</div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Geethanjali Institute of Science & Technology | Dept. of AI & DS</p>
+    </footer>
+
+    <!-- Direct JavaScript for guaranteed tab switching -->
+    <script>
+        function switchWeek(weekNum) {
+            // Hide all contents
+            for (let i = 1; i <= 8; i++) {
+                const content = document.getElementById('week-' + i);
+                const button = document.getElementById('btn-' + i);
+                if (content) content.classList.remove('active');
+                if (button) button.classList.remove('active');
+            }
+
+            // Show selected content and activate button
+            const activeContent = document.getElementById('week-' + weekNum);
+            const activeBtn = document.getElementById('btn-' + weekNum);
+            
+            if (activeContent) activeContent.classList.add('active');
+            if (activeBtn) activeBtn.classList.add('active');
+        }
+
+        // Mobile menu toggle logic
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

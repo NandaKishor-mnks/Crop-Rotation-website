@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Crop Rotation CSP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        /* ---------- HERO ---------- */
+
+        .hero-title {
+            text-align: center;
+        }
+
+        .hero-title h1 {
+            margin-bottom: 8px;
+        }
+
+        .hero-title p {
+            font-size: 1.05rem;
+        }
+
+
+        /* ---------- SECTION HEADINGS ---------- */
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            color: var(--primary-dark);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            color: #666;
+        }
+
+
+        /* ---------- INTRODUCTION ---------- */
+
+        .intro-card {
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .intro-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .intro-card p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+
+        /* ---------- BENEFITS ---------- */
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+
+        .benefit-card {
+            background: #fff;
+            padding: 22px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+            transition: 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .benefit-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+
+        /* ---------- CYCLE ---------- */
+
+        .cycle-card {
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .cycle-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .cycle-card > p {
+            max-width: 750px;
+            margin: 0 auto;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .cycle-image {
+            margin-top: 25px;
+        }
+
+        .cycle-image img {
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+
+        /* ---------- SEASON TABLE ---------- */
+
+        .table-card {
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .table-title {
+            color: var(--primary-dark);
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .rotation-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        .rotation-table th {
+            background: var(--primary-dark);
+            color: white;
+            padding: 14px;
+            font-size: 0.95rem;
+        }
+
+        .rotation-table td {
+            padding: 14px;
+            border: 1px solid #ddd;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .rotation-table tr:nth-child(even) {
+            background: #f8faf8;
+        }
+
+        .rotation-table strong {
+            color: var(--primary-dark);
+        }
+
+
+        /* ---------- STAGE CARDS ---------- */
+
+        .stage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .stage-card {
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .stage-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 18px;
+        }
+
+        .stage-info {
+            margin-bottom: 10px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .stage-label {
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .stage-description {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: #666;
+            line-height: 1.7;
+        }
+
+
+        /* ---------- FINAL MESSAGE ---------- */
+
+        .cycle-message {
+            margin-top: 30px;
+            padding: 25px;
+            text-align: center;
+            background: #f3f8f3;
+            border-radius: var(--radius);
+            border: 1px solid #dcebdc;
+        }
+
+        .cycle-message h3 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .cycle-message p {
+            max-width: 750px;
+            margin: auto;
+            color: #555;
+            line-height: 1.7;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 600px) {
+
+            .section-heading h2 {
+                font-size: 1.6rem;
+            }
+
+            .intro-card,
+            .cycle-card,
+            .table-card,
+            .stage-card {
+                padding: 20px;
+            }
+
+            .rotation-table {
+                font-size: 0.85rem;
+            }
+
+            .rotation-table th,
+            .rotation-table td {
+                padding: 9px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="header-container">
+
+        <div class="logo-area">
+
+            <img src="images/college-logo.png"
+                alt="GIST Logo"
+                class="college-logo"
+                onerror="this.src='https://via.placeholder.com/50?text=LOGO'">
+
+            <div class="college-info">
+
+                <h1>
+                    Geethanjali Institute of Science & Technology
+                </h1>
+
+                <h2>
+                    Department of Artificial Intelligence and Data Science
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <ul>
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="weekly-details.html">Weekly Details</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<div class="hero-title">
+
+    <h1>CROP ROTATION</h1>
+
+    <p>
+        Helping Farmers Grow Healthy Crops Naturally — Gangavaram Village
+    </p>
+
+</div>
+
+
+
+<main class="main-content section-padding">
+
+<div class="container">
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section>
+
+    <div class="section-heading">
+
+        <h2>Introduction to Crop Rotation</h2>
+
+        <p>
+            A simple and natural farming practice that helps maintain
+            healthy soil and better crop production.
+        </p>
+
+    </div>
+
+
+
+    <!-- WHAT IS CROP ROTATION -->
+
+    <div class="card intro-card">
+
+        <h3>
+            🌾 What is Crop Rotation?
+        </h3>
+
+        <p>
+
+            <span class="highlight">Crop rotation</span> is a farming
+            practice in which different crops are grown in the same
+            field in a planned sequence.
+
+            Instead of growing the same crop continuously, farmers
+            change the crop from one season to another.
+
+        </p>
+
+        <p style="margin-top:12px;">
+
+            This simple practice helps maintain
+            <span class="highlight">soil fertility</span>,
+            reduce pest and disease problems, and support
+            healthy crop growth.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- BENEFITS -->
+
+    <div class="section-heading" style="margin-top:35px;">
+
+        <h2 style="font-size:1.6rem;">
+            Why is Crop Rotation Important?
+        </h2>
+
+    </div>
+
+
+    <div class="benefits-grid">
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🌱</div>
+
+            <h4>Maintains Soil Fertility</h4>
+
+            <p>
+                Different crops use different nutrients,
+                helping maintain a better nutrient balance.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🌍</div>
+
+            <h4>Improves Soil Health</h4>
+
+            <p>
+                Different root systems help improve soil
+                structure and support plant growth.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🐛</div>
+
+            <h4>Reduces Pests</h4>
+
+            <p>
+                Changing crops can disturb pest life cycles
+                and reduce pest problems.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🦠</div>
+
+            <h4>Reduces Diseases</h4>
+
+            <p>
+                Crop rotation can reduce the build-up of
+                crop diseases in the soil.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🌾</div>
+
+            <h4>Improves Crop Yield</h4>
+
+            <p>
+                Healthy soil provides better conditions
+                for crops to grow and produce well.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">💧</div>
+
+            <h4>Protects the Soil</h4>
+
+            <p>
+                Plant roots help hold the soil together
+                and reduce soil erosion.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">♻️</div>
+
+            <h4>Supports Sustainable Farming</h4>
+
+            <p>
+                It helps farmers maintain productive
+                land for future seasons.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">💰</div>
+
+            <h4>Reduces Fertilizer Dependence</h4>
+
+            <p>
+                Some crops can naturally improve the
+                availability of important soil nutrients.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section style="margin-top:65px;">
+
+
+    <div class="section-heading">
+
+        <h2>How Crop Rotation Works</h2>
+
+        <p>
+            Different groups of crops are grown one after another.
+            Each group has different nutrient needs and effects on the soil.
+        </p>
+
+    </div>
+
+
+
+    <!-- CYCLE -->
+
+    <div class="card cycle-card">
+
+        <h3>
+            🔄 The 4-Stage Crop Rotation Cycle
+        </h3>
+
+        <p>
+
+            The crops are grown in a planned order.
+            After completing the four stages, the cycle starts again.
+
+        </p>
+
+
+        <div class="cycle-image">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTQuY9YaKEqxwrl2d6_zDcNKwJDL3L9hVC2XEmET8ZA&s=10"
+                alt="Legumes Leaves Fruits Roots Crop Rotation Cycle"
+                onerror="this.src='https://via.placeholder.com/750x350?text=Add+Crop+Rotation+Cycle+Image'">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TABLE -->
+
+    <div class="card table-card">
+
+        <h3 class="table-title">
+            The 4-Stage Rotation
+        </h3>
+
+
+        <div style="overflow-x:auto;">
+
+            <table class="rotation-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Stage</th>
+
+                        <th>Crop Group</th>
+
+                        <th>Examples</th>
+
+                        <th>Main Role</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1st</td>
+
+                        <td>
+                            <strong>🌱 Legumes</strong><br>
+                            Soil Builders
+                        </td>
+
+                        <td>
+                            Peas, Beans, Groundnut, Chickpea
+                        </td>
+
+                        <td>
+                            Helps improve nitrogen availability
+                            in the soil.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>2nd</td>
+
+                        <td>
+                            <strong>🥬 Leafy Crops</strong><br>
+                            Heavy Feeders
+                        </td>
+
+                        <td>
+                            Spinach, Cabbage, Broccoli
+                        </td>
+
+                        <td>
+                            Uses available nutrients
+                            for healthy leaf growth.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>3rd</td>
+
+                        <td>
+                            <strong>🍅 Fruit Crops</strong><br>
+                            Balanced Feeders
+                        </td>
+
+                        <td>
+                            Tomato, Cucumber, Pepper, Brinjal
+                        </td>
+
+                        <td>
+                            Uses nutrients for flowering
+                            and fruit development.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>4th</td>
+
+                        <td>
+                            <strong>🥕 Root Crops</strong><br>
+                            Light Feeders
+                        </td>
+
+                        <td>
+                            Carrot, Radish, Beetroot
+                        </td>
+
+                        <td>
+                            Grows below the soil and
+                            supports soil structure.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- STAGE CARDS -->
+
+    <div class="stage-grid">
+
+
+        <!-- LEGUMES -->
+
+        <div class="stage-card">
+
+            <h3>
+                🌱 1st – Legumes
+            </h3>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Role:</span>
+                Soil Builders
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Examples:</span>
+                Peas, Beans, Groundnut, Chickpea
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Main Benefit:</span>
+                Improves nitrogen availability
+
+            </div>
+
+
+            <div class="stage-description">
+
+                Legumes help improve soil fertility and
+                prepare the soil for the next crop.
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LEAVES -->
+
+        <div class="stage-card">
+
+            <h3>
+                🥬 2nd – Leafy Crops
+            </h3>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Role:</span>
+                Heavy Feeders
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Examples:</span>
+                Spinach, Cabbage, Broccoli
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Main Benefit:</span>
+                Uses available nutrients
+
+            </div>
+
+
+            <div class="stage-description">
+
+                Leafy crops need a good supply of nutrients
+                for healthy leaf growth.
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FRUITS -->
+
+        <div class="stage-card">
+
+            <h3>
+                🍅 3rd – Fruit Crops
+            </h3>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Role:</span>
+                Balanced Feeders
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Examples:</span>
+                Tomato, Cucumber, Pepper, Brinjal
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Main Benefit:</span>
+                Supports fruit development
+
+            </div>
+
+
+            <div class="stage-description">
+
+                Fruit crops need balanced nutrients for
+                healthy flowering and fruit production.
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ROOTS -->
+
+        <div class="stage-card">
+
+            <h3>
+                🥕 4th – Root Crops
+            </h3>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Role:</span>
+                Light Feeders
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Examples:</span>
+                Carrot, Radish, Beetroot
+
+            </div>
+
+            <div class="stage-info">
+
+                <span class="stage-label">Main Benefit:</span>
+                Supports soil structure
+
+            </div>
+
+
+            <div class="stage-description">
+
+                Root crops grow below the soil and their
+                roots help improve soil structure.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FINAL MESSAGE -->
+
+    <div class="cycle-message">
+
+        <h3>
+            🌾 Why Follow the Rotation?
+        </h3>
+
+        <p>
+
+            Following a planned crop rotation helps maintain
+            <strong>soil fertility</strong>, reduce
+            <strong>pests and diseases</strong>, improve
+            <strong>soil health</strong>, and support
+            <strong>better crop production</strong>.
+
+            After the fourth stage, the cycle starts again
+            with legumes.
+
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 Geethanjali Institute of Science & Technology |
+        Dept. of AI & DS
+    </p>
+
+</footer>
+
+
+
+<!-- MENU -->
+
+<script>
+
+    document
+        .getElementById('menuToggle')
+        .addEventListener('click', function () {
+
+            document
+                .getElementById('navMenu')
+                .classList
+                .toggle('active');
+
+        });
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+:root { 
+    --primary-color: #2e7d32; 
+    --primary-dark: #1b5e20; 
+    --primary-light: #e8f5e9; 
+    --text-dark: #2c3e50; 
+    --text-muted: #555555; 
+    --bg-light: #f8f9fa; 
+    --white: #ffffff; 
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.12); 
+    --radius: 8px; 
+    --transition: all 0.3s ease; 
+} 
+ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+} 
+ 
+body { 
+    color: var(--text-dark); 
+    line-height: 1.6; 
+    background-color: var(--white); 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+} 
+ 
+.main-content { flex: 1; } 
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; } 
+.section-padding { padding: 40px 0 60px; } 
+.text-center { text-align: center; } 
+ 
+/* Header Navigation */ 
+.header { 
+    position: sticky; 
+    top: 0; 
+    background-color: var(--white); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    z-index: 1000; 
+} 
+ 
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+ 
+.logo-area { display: flex; align-items: center; gap: 15px; } 
+.college-logo { height: 50px; } 
+.college-info h1 { font-size: 1rem; color: var(--primary-dark); font-weight: 700; } 
+.college-info h2 { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; } 
+ 
+.nav-menu ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 15px; 
+    align-items: center; 
+} 
+ 
+.nav-menu a { 
+    text-decoration: none; 
+    color: var(--text-dark); 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    transition: var(--transition); 
+} 
+ 
+.nav-menu a:hover, .nav-menu a.active { 
+    color: var(--white); 
+    background-color: var(--primary-color); 
+} 
+ 
+.menu-toggle { 
+    display: none; 
+    background: none; 
+    border: none; 
+    font-size: 1.5rem; 
+    color: var(--primary-dark); 
+    cursor: pointer; 
+} 
+ 
+/* Week Selection Tabs */ 
+.week-tabs { 
+    display: flex; 
+    justify-content: center; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+    margin-bottom: 25px; 
+} 
+ 
+.tab-btn { 
+    background-color: var(--bg-light); 
+    border: 1px solid #ccc; 
+    color: var(--text-dark); 
+    padding: 10px 18px; 
+    border-radius: var(--radius); 
+    cursor: pointer; 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    transition: var(--transition); 
+} 
+ 
+.tab-btn:hover, .tab-btn.active { 
+    background-color: var(--primary-color); 
+    color: var(--white); 
+    border-color: var(--primary-color); 
+} 
+ 
+/* Week Display Panel */ 
+.week-content { 
+    background: var(--white); 
+    padding: 30px; 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow); 
+    border-left: 5px solid var(--primary-color); 
+} 
+ 
+.week-content h2 { color: var(--primary-dark); margin-bottom: 15px; text-align: center; } 
+.week-date { display: block; color: var(--primary-color); font-weight: bold; font-size: 0.88rem; margin-bottom: 15px; } 
+.week-content h3 { margin: 15px 0 8px; font-size: 1.05rem; } 
+.week-content ul { margin-left: 20px; margin-bottom: 15px; } 
+.week-content li { margin-bottom: 6px; } 
+.week-content img { width: 100%; max-height: 350px; object-fit: cover; border-radius: var(--radius); margin-top: 15px; } 
+ 
+/* Footer */ 
+.footer { 
+    background: var(--primary-dark); 
+    color: var(--white); 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 0.85rem; 
+} 
+ 
+@media (max-width: 900px) { 
+    .menu-toggle { display: block; } 
+    .nav-menu { 
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        width: 100%; 
+        background: var(--white); 
+        padding: 20px; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    } 
+    .nav-menu.active { display: block; } 
+    .nav-menu ul { flex-direction: column; align-items: flex-start; } 
+} 
+/* Header Container Flex Layout */ 
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+ 
+/* Logo and College Name Alignment */ 
+.logo-area { 
+    display: flex; 
+    align-items: center; /* Vertically aligns logo with text */ 
+    gap: 15px;           /* Space between logo image and college name */ 
+} 
+ 
+/* College Logo Dimensions */ 
+.college-logo { 
+    height: 55px;        /* Adjust height to fit header bar neatly */ 
+    width: auto;         /* Maintains image proportions */ 
+    object-fit: contain; 
+} 
+ 
+/* College Text Styling */ 
+.college-info h1 { 
+    font-size: 1.05rem; 
+    color: var(--primary-dark); 
+    font-weight: 700; 
+    line-height: 1.2; 
+} 
+ 
+.college-info h2 { 
+    font-size: 0.82rem; 
+    color: var(--text-muted); 
+    font-weight: 600; 
+} 
+@media (max-width: 700px) { 
+    .team-details { 
+        grid-template-columns: 1fr; 
+        gap: 20px; /* Ensures clean gap when stacked vertically */ 
+    } 
+} 
+/* ===== DESCRIPTION POINTS ===== */ 
+ 
+.description-points { 
+    margin: 0; 
+    padding-left: 28px; 
+    line-height: 1.8; 
+} 
+ 
+.description-points li { 
+    margin-bottom: 13px; 
+    padding-left: 5px; 
+    color: #333; 
+    font-size: 1rem; 
+} 
+ 
+.description-points li::marker { 
+    font-size: 1rem; 
+} 
+ 
+.description-points strong { 
+    color: #111; 
+    font-weight: 700; 
+} 
+/* ===== WEEK 1 PHOTO GALLERY ===== */ 
+ 
+.week-gallery { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
+} 
+ 
+.gallery-item { 
+    text-align: center; 
+} 
+ 
+.gallery-item img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: contain; 
+    background-color: #f8f9fa; 
+    border-radius: var(--radius); 
+    margin-top: 0; 
+} 
+.gallery-item p { 
+    margin-top: 8px; 
+    font-size: 0.95rem; 
+    font-weight: 600; 
+    color: var(--text-dark); 
+} 
+ 
+@media (max-width: 700px) { 
+    .week-gallery { 
+        grid-template-columns: 1fr; 
+    } 
+}
+/* SURVEY CHARTS */
+.survey-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.survey-chart {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: var(--radius);
+    border: 1px solid #e0e0e0;
+}
+
+.survey-chart img {
+    width: 90%;
+    height: 240px;
+    object-fit: contain;
+    border-radius: var(--radius);
+    margin: 0 auto;
+    display: block;
+}
+
+.survey-chart p {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .survey-charts {
+        gap: 25px;
+    }
+
+    .survey-chart {
+        padding: 15px;
+    }
+
+    .survey-chart img {
+        width: 100%;
+        height: 220px;
+    }
+}
